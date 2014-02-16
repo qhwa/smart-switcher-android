@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">智能开关</string>
+    <string name="action_tasks">预约</string>
+    <string name="task_list">预约</string>
+</resources>

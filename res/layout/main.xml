@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<ImageView
+    android:id="@+id/bgimg"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:src="@drawable/off"
+    android:scaleType="centerCrop"
+    />
+
+<!--
+<ViewGroup
+    android:id="@+id/buttons"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+-->
+
+<ToggleButton
+    android:id="@+id/togglebutton"
+    android:layout_centerInParent="true"
+    android:layout_width="110dp"
+    android:layout_height="240dp"
+    android:textOn=""
+    android:textOff=""
+    android:background="@android:color/transparent"
+    android:onClick="onTurnOn"
+    />
+
+<ToggleButton
+    android:id="@+id/togglebutton_off"
+    android:layout_alignTop="@+id/togglebutton"
+    android:layout_alignLeft="@+id/togglebutton"
+    android:layout_width="110dp"
+    android:layout_height="100dp"
+    android:textOn=""
+    android:textOff=""
+    android:background="@android:color/transparent"
+    android:onClick="onTurnOff"
+    />
+<!--
+</ViewGroup>
+-->
+
+</RelativeLayout>
+

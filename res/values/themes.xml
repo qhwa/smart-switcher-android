@@ -1,0 +1,5 @@
+<resources>
+    <style name="MyTheme" parent="@android:style/Theme">
+        <!-- 定义在3.0之前版本使用的主题 -->
+    </style>
+</resources>

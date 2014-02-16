@@ -1,6 +1,6 @@
 package cc.pnq.spark.home;
 
-import android.app.Activity;
+import android.app.*;
 import android.os.Bundle;
 import android.view.*;
 import android.widget.*;
@@ -61,7 +61,9 @@ public class MainActivity extends Activity
 
     private void updateBg() {
         img = (ImageView) findViewById( R.id.bgimg );
-        img.setImageResource( turnedOn ? R.drawable.on : R.drawable.off );
+        if( img != null ) {
+            img.setImageResource( turnedOn ? R.drawable.on : R.drawable.off );
+        }
     }
 
 
@@ -126,8 +128,14 @@ public class MainActivity extends Activity
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu items for use in the action bar
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.main, menu);
+        inflater.inflate( R.menu.main, menu );
         return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        onClickTasksMenu( item );
+        return true;
     }
 
     public void onClickTasksMenu(MenuItem menu) {

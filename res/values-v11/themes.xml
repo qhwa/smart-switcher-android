@@ -1,0 +1,17 @@
+<resources>
+    <style name="MyTheme" parent="@android:style/Theme.Holo">
+        <!-- 在api level 为11+ 的版本上使用 Theme.Holo 主题 -->
+        <item name="android:actionBarStyle">@style/MyTheme.ActionBarStyle</item>
+        <item name="android:actionBarSize">48dip</item>
+    </style>
+
+    <style name="MyTheme.ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/action_bar_background</item>
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#ff797979</item>
+    </style>
+
+</resources>
