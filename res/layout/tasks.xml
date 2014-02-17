@@ -8,8 +8,16 @@
 <ListView
     android:id="@+id/listview"
     android:layout_width="match_parent" 
-    android:layout_height="match_parent" 
-    android:layout_weight="1" 
+    android:layout_height="wrap_content" 
+    />
+
+<TextView
+    android:id="@+id/new_task"
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content" 
+    android:text="++++++++++++++++++"
+    android:clickable="true"
+    android:onClick="onClickNewTask"
     />
 
 </LinearLayout>

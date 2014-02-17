@@ -50,6 +50,8 @@ public class MainActivity extends Activity
                 turnedOn     = state.equals( "ON" );
                 msg( result.optBoolean("success") ? "状态更新完毕" : "状态更新失败" );
                 updateBg();
+
+                
             }
 
             @Override
@@ -57,6 +59,7 @@ public class MainActivity extends Activity
                 msg( "连接失败 :(" );
             }
         });
+
     }
 
     private void updateBg() {
@@ -112,11 +115,11 @@ public class MainActivity extends Activity
         return turnedOn ? "ON" : "OFF";
     }
 
-    private void msg( String text ) {
+    private void msg( Object obj ) {
         if( notifier != null ) {
             notifier.cancel();
         }
-        notifier = Toast.makeText(getApplicationContext(), text, 1000);
+        notifier = Toast.makeText(getApplicationContext(), String.valueOf(obj), 1000);
         notifier.show();
     }
 

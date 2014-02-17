@@ -1,5 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/action_tasks"
+          android:layout_width="20dip"
+          android:layout_height="20dip"
           android:icon="@drawable/clock"
           android:title="@string/action_tasks"
           android:showAsAction="ifRoom|withText"
